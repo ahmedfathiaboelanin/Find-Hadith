@@ -1,0 +1,109 @@
+section {
+  font-family: "Amiri", serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+section .container {
+  border: 2px solid purple;
+  padding: 50px;
+}
+section .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+section .container .content .search {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+section .container .content .search input {
+  width: 100%;
+  outline: none;
+  border: 1px solid purple;
+  padding-right: 10px;
+  direction: rtl;
+}
+section .container .content .search button {
+  width: 150px;
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 0;
+  border: 1px solid purple;
+  background-color: purple;
+  color: white;
+}
+section .container .content .text {
+  direction: rtl;
+}
+section .container .content .text span {
+  display: block;
+}
+section .container .content .text p {
+  border: 1px solid black;
+  padding: 10px;
+}
+section .container .content .next, section .container .content .clear {
+  background-color: purple;
+  color: white;
+  font-size: 15px;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  border: 2px solid purple;
+  font-size: 20px;
+  background-color: white;
+  z-index: 5;
+  display: none;
+}
+.popup button {
+  background-color: purple;
+  color: white;
+  font-size: 15px;
+  padding: 2px 20px;
+  border: none;
+  border-radius: 2px;
+}
+
+.layer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.322);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+
+button {
+  outline: none;
+}/*# sourceMappingURL=main.css.map */
